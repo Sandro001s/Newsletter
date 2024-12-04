@@ -1,0 +1,188 @@
+.roboto-regular,p,input,.submit {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-bold,h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(235, 18%, 26%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+.container{
+    background-color: white;
+    width: 1000px;
+    height: 800px;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 200px;
+    display: flex;
+}
+
+.form{
+    width: 57%;
+    height: 700px;
+}
+
+h1{
+    font-size: 4rem;
+    margin-top: 30px;
+}
+
+.news{
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 19px;
+}
+
+.ptexts{
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.fa-circle-check{
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.signup{
+    display: flex;
+    flex-direction: column;
+}
+
+.inp{
+    width: 25rem;
+    height: 4rem;
+    border-radius: 20px;
+    border: 1px solid grey;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.submit{
+    width: 25rem;
+    height: 4rem;
+    border-radius: 20px;
+    margin-top: 30px;
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.succesmsg{
+    background-color: white;
+    width: 550px;
+    height: 600px;
+    border-radius: 50px;
+    padding: 55px;
+    margin: 200px;
+    display: none;
+}
+
+.succesmsg > i{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.succesmsg > p{
+    margin-top: 30px;
+}
+
+.dismissbtn{
+    width: 450px;
+    height: 60px;
+    margin-top: 50px;
+    border-radius: 10px;
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+    font-size: 20px;
+    border: none;
+}
+
+.errorinput{
+    background-color: rgba(255, 0, 0, 0.22);
+    border: 1px solid red;
+}
+
+.errortext{
+    margin-left: 160px;
+    color: red;
+    display: none;
+}
+
+.mobileimg{
+    display: none;
+    width: 430px;
+}
+
+
+
+@media (max-width: 431px){
+     .container{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        padding: 0;
+        flex-direction: column;
+     }
+     .desktopimg{
+        display: none;
+     }
+     .mobileimg{
+        display: block;
+     }
+     .form{
+        width: 100%;
+        padding: 20px;
+     }
+     h1{
+        font-size: 3.5rem;
+     }
+     .news{
+        font-size: 20px;
+     }
+     .updates{
+        font-size: 17px;
+     }
+     .ptexts{
+        margin-bottom: 40px;
+     }
+     .errortext{
+        margin-left: 140px;
+     }
+     .succesmsg{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        padding: 20px;
+        padding-top: 130px;
+     }
+     .dismissbtn{
+        width: 390px;
+        margin-top: 300px;
+     }
+}

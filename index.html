@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Newsletter sign-up form with success message</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/66b0dc1e98.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="container" id="container">
+    <img class="mobileimg" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+    <div class="form">
+      <h1>Stay updated!</h1>
+      <p class="news">Join 60,000+ product managers receiving monthly updates on:</p>
+
+      <div class="ptexts">
+        <p class="updates"><i class="fa-solid fa-circle-check" style="color: #ff6257;"></i> Product discovery and building what matters</p>
+        <p class="updates"><i class="fa-solid fa-circle-check" style="color: #ff6257;"></i> Measuring to ensure updates are a success</p>
+        <p class="updates"><i class="fa-solid fa-circle-check" style="color: #ff6257;"></i> And much more!</p>
+      </div>
+
+      <div class="signup">
+        <div style="display: flex;">
+          <p>Email address</p>
+          <span id="errortext" class="errortext">Valid email required</span>
+        </div>
+        <input type="email" class="inp" id="inp" placeholder="email@company.com">
+        <button id="btn" class="submit">Subscribe to monthly newsletter</button>
+      </div>
+    </div>
+
+    <img class="desktopimg" src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+    
+  </div>
+
+  <div class="succesmsg" id="succmsg">
+    <i class="fa-solid fa-circle-check" style="color: #ff6257;"></i>
+    <h1>Thanks for subscribing!</h1>
+    <p>A confirmation email has been sent to <span id="youremail" style="color: black; font-weight: bold;">ash@loremcompany.com.</span> 
+      Please open it and click the button inside to confirm your subscription.</p>
+    <button id="dismissbtn" class="dismissbtn">Dismiss message</button>
+  </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
